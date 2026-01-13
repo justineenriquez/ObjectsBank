@@ -1,1 +1,1 @@
-<h1>ObjectsBank(PHP)</h1>
+<h1>ObjectsBank</h1>
