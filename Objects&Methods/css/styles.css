@@ -1,0 +1,215 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #DAD7CD;
+  color: #ffffff; 
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  padding: 20px 0;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+header img {
+  height: 270px;
+  width: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+h1 {
+  display: block;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 2.4em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  color: #b5b6c1;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.7em 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: transparent; 
+}
+
+.account-summary {
+  background: rgba(241, 238, 238, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: -60px;
+}
+
+.account-summary h1 {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+.account-summary h2 {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.3em 2em 0.3em 0;
+}
+
+th:last-child {
+  padding-right: 0;
+}
+
+tr:nth-child(2) td {
+  padding-top: 0.6em;
+}
+
+th {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border-bottom: 1px solid #6f7381;
+  font-weight: normal;
+  color: #b5b6c1;
+}
+
+td {
+  color: #000000;
+}
+
+td.overdrawn {
+  color: #ff6b35;
+}
+
+td.credit {
+  color: #1a237e;
+}
+
+.accounts-table {
+  width: 100%;
+  margin: 20px 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accounts-table thead {
+  background: #14452F;
+  color: white;
+}
+
+.accounts-table th,
+.accounts-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.accounts-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.accounts-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.accounts-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.total-balance {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #1a237e;
+}
+
+.total-balance p {
+  font-size: 1.5em;
+  margin: 0;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  td, th {
+    padding: 0.3em 0.8em;
+  }
+
+  main {
+    padding: 0 15px;
+  }
+
+  section {
+    padding: 1em 15px;
+  }
+
+  .account-summary {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .accounts-table {
+    font-size: 0.9em;
+  }
+
+  .accounts-table th,
+  .accounts-table td {
+    padding: 10px 8px;
+  }
+
+  .account-summary h1 {
+    font-size: 2em;
+  }
+
+  .account-summary h2 {
+    font-size: 1.5em;
+  }
+}
